@@ -1,0 +1,28 @@
+%form-field{
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+}
+
+%list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+%no-padding-bottom {
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+    }
+}
