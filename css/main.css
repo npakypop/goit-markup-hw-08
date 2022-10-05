@@ -795,6 +795,12 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
+@media screen and (max-width: 370px) {
+  .decision__title {
+    font-size: 20px;
+    line-height: 1.36;
+  }
+}
 @media screen and (min-width: 1200px) {
   .decision__title {
     font-size: 44px;
@@ -1045,6 +1051,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
