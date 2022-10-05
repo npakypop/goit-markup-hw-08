@@ -130,7 +130,8 @@
             <li class="task__item">
               <img
                 class="task__img"
-                src="images/task/box1.png"
+                srcset="./photos/work/work_01_d-min.jpg 1x, ./photos/work/work_01_d@2x-min.jpg 2x,"
+                src="./photos/work/work_01_d-min.jpg"
                 alt="picture1"
                 width="370"
               />
@@ -141,7 +142,8 @@
             <li class="task__item">
               <img
                 class="task__img"
-                src="images/task/box2.png"
+                srcset="./photos/work/work_02_d-min.jpg 1x, ./photos/work/work_02_d@2x-min.jpg 2x,"
+                src="./photos/work/work_02_d-min.jpg"
                 alt="picture2"
                 width="370"
               />
@@ -152,7 +154,8 @@
             <li class="task__item">
               <img
                 class="task__img"
-                src="images/task/box3.png"
+                srcset="./photos/work/work_03_d-min.jpg 1x, ./photos/work/work_03_d@2x-min.jpg 2x,"
+                src="./photos/work/work_03_d-min.jpg"
                 alt="picture3"
                 width="370"
               />
@@ -168,7 +171,20 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list ">
             <li class="team__card">
-              <img class="team__img" src="images/team/img.jpg" alt="Product Designer" width="270"/>
+              <img 
+              class="team__img" 
+              srcset="
+              ./photos/team/team-01_m-min.jpg 450w,
+              ./photos/team/team-01_m@2x-min.jpg 900w,
+              ./photos/team/team-01_t-min.jpg 354w,
+              ./photos/team/team-01_t@2x-min.jpg 708w,
+              ./photos/team/team-01_d-min.jpg 270w,
+              ./photos/team/team-01_d@2x-min.jpg 540w,"
+
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./photos/team/team-01_m-min.jpg" 
+              alt="Product Designer" 
+              />
               <div class="team__person">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -207,9 +223,17 @@
             <li class="team__card">
               <img
                 class="team__img"
-                src="images/team/img(1).jpg"
-                alt="Frontend Developer"
-                width="270"
+                srcset="
+                ./photos/team/team-02_m-min.jpg 450w,
+                ./photos/team/team-02_m@2x-min.jpg 900w,
+                ./photos/team/team-02_t-min.jpg 354w,
+                ./photos/team/team-02_t@2x-min.jpg 708w,
+                ./photos/team/team-02_d-min.jpg 270w,
+                ./photos/team/team-02_d@2x-min.jpg 540w,"
+
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./photos/team/team-02_m-min.jpg" 
+                alt="Frontend Developer"               
               />
               <div class="team__person">
                 <h3 class="team__name">Ольга Рєпіна</h3>
@@ -249,9 +273,17 @@
             <li class="team__card">
               <img
                 class="team__img"
-                src="images/team/img(2).jpg"
-                alt="Marketing"
-                width="270"
+                srcset="
+                ./photos/team/team-03_m-min.jpg 450w,
+                ./photos/team/team-03_m@2x-min.jpg 900w,
+                ./photos/team/team-03_t-min.jpg 354w,
+                ./photos/team/team-03_t@2x-min.jpg 708w,
+                ./photos/team/team-03_d-min.jpg 270w,
+                ./photos/team/team-03_d@2x-min.jpg 540w,"
+
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./photos/team/team-03_m-min.jpg" 
+                alt="Marketing"               
               />
               <div class="team__person">
                 <h3 class="team__name">Микола Тарасов</h3>
@@ -291,9 +323,17 @@
             <li class="team__card">
               <img
                 class="team__img"
-                src="images/team/img(3).jpg"
-                alt="UI Designer"
-                width="270"
+                srcset="
+                ./photos/team/team-04_m-min.jpg 450w,
+                ./photos/team/team-04_m@2x-min.jpg 900w,
+                ./photos/team/team-04_t-min.jpg 354w,
+                ./photos/team/team-04_t@2x-min.jpg 708w,
+                ./photos/team/team-04_d-min.jpg 270w,
+                ./photos/team/team-04_d@2x-min.jpg 540w,"
+
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./photos/team/team-04_m-min.jpg" 
+                alt="UI Designer"               
               />
               <div class="team__person">
                 <h3 class="team__name">Михайло Єрмаков</h3>
@@ -515,33 +555,6 @@
         <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
       </ul>
     </div>
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-      <div class="box">
-        <button type="button" class="menu-button js-close-menu" aria-expanded="false" aria-controls="menu-container"
-          data-menu-button>
-          <svg class="menu-icon" width="40" height="40">
-            <use href="./images/sprite1.svg#menu_close"></use>
-          </svg>
-        </button>
-      
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link mobile-nav__link--active">Студія</a>
-          </li>
-          <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a></li>
-          <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакти</a></li>
-        </ul>
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__item"><a href="" class="mobile-contacts__link">+38 096 111 11 11</a></li>
-          <li class="mobile-contacts__item"><a href="" class="mobile-contacts__link">info@devstudio.com</a></li>
-        </ul>
-        <ul class="mobile-socials">
-          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram</a></li>
-          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
-          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
-          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div> -->
     <script src="./js/modal.js"></script>
     <!-- mobile menu -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
