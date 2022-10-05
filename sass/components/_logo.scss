@@ -5,9 +5,13 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.5;
+    font-size: 24px;
+    line-height: calc(28/24);
     color: var(--black-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: calc(31/26);
+    }
 }
 
 .logo-web {

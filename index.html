@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__wrap">
         <nav class="header-nav__bar">
           <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
@@ -53,17 +53,22 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/sprite1.svg#menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="decision">
+      <section class="decision">
         <div class="container">
           <h1 class="decision__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn btn--primary" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="benefits">
         <div class="container">
           <h2 class="section-title visually-hidden">Особливості</h2>
@@ -372,7 +377,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">  
+    <footer class="footer">  
       <div class="container">
           <div class="footer__container">
             <div class="footer-wrap">
@@ -438,8 +443,9 @@
             </div>
           </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn modal__close-btn" type="button" data-modal-close>
           <svg class="modal__close-icon" width="11" height="11">
@@ -484,7 +490,64 @@
           <button class="btn modal__btn " type="submit">Відправити</button>
         </form>
       </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-button js-close-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-icon" width="40" height="40">
+          <use href="./images/sprite1.svg#menu_close"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link mobile-nav__link--active">Студія</a></li>
+        <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a></li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item"><a href="" class="mobile-contacts__link">+38 096 111 11 11</a></li>
+        <li class="mobile-contacts__item"><a href="" class="mobile-contacts__link">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
+      </ul>
+    </div>
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="box">
+        <button type="button" class="menu-button js-close-menu" aria-expanded="false" aria-controls="menu-container"
+          data-menu-button>
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/sprite1.svg#menu_close"></use>
+          </svg>
+        </button>
+      
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link mobile-nav__link--active">Студія</a>
+          </li>
+          <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a></li>
+          <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item"><a href="" class="mobile-contacts__link">+38 096 111 11 11</a></li>
+          <li class="mobile-contacts__item"><a href="" class="mobile-contacts__link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram</a></li>
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+          <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
+        </ul>
+      </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/mobile.menu.js"></script>
   </body>
 </html>
