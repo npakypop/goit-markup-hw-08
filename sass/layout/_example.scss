@@ -28,45 +28,6 @@
     }
 }
 
-.example__thumb {
-    position: relative;
-    overflow-y: hidden;
-    // width: 100%;
-}
-
-.example__overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 100%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.example__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 322px;
-    height: 168px;
-    font-size: 18px;
-    line-height: calc(28 / 18);
-    letter-spacing: 0.03em;
-    color: var(--white-color);
-
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .example__link {
     @extend %link;
     display:flex;
@@ -86,10 +47,47 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
+.example__thumb {
+    position: relative;
+    overflow-y: hidden;
+}
 
-// .example__img {
-//     width: 100%;
-// }
+.example__overlay {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.example__text {
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    max-height: 100%;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 340px){
+        font-size: 16px;
+    }
+}
 
 .example__desc {
     flex-grow: 1;
